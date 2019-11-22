@@ -1,20 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>HTML5 Payment Form</title>
-  </head>
- 
-  <body>
-          
-  <div class="card text-left w-75 mx-auto">
+ <div class="card text-left w-75 mx-auto">
             <div class="card-header">
               <h4>  Payment Form Example</h4>
             </div>
@@ -37,14 +21,14 @@
                             <label for="validationTooltip02">CVV</label>
                             <input type="email" class="form-control" id="validationTooltip02" placeholder="xxx">
                             <div class="valid-tooltip">
-                                Please enter a valid CVV
+                                Looks good!
                             </div>
                         </div>
                         <div class="form-group text-left col-md-4">
                             <label for="validationTooltip03">Amount</label>
                             <input type="password" class="form-control" id="validationTooltip03" placeholder="$00.00">
-                            <div class="invalid-tooltip">
-                                Enter payment amount!
+                            <div class="valid-tooltip">
+                                Looks good!
                             </div>
                         </div>
                     </div>
@@ -54,14 +38,14 @@
                             <label for="validationTooltip04">First Name</label>
                             <input type="email" class="form-control" id="validationTooltip04" placeholder="Peter">
                             <div class="invalid-tooltip">
-                                First Name
+                                Looks good!
                             </div>
                         </div>
                         <div class="form-group text-left col-md-6">
                             <label for="validationTooltip05">Last Name</label>
                             <input type="password" class="form-control" id="validationTooltip05" placeholder="Griffin">
                             <div class="invalid-tooltip">
-                                Last Name
+                                Looks good!
                             </div>
                         </div>
                     </div>
@@ -70,8 +54,8 @@
                         <div class="form-group text-left col-md-6">
                             <label for="validationTooltip06">City</label>
                             <input type="text" class="form-control" id="validationTooltip06">
-                            <div class=invalid-tooltip">
-                                Please enter a City!
+                            <div class="valid-tooltip">
+                                Looks good!
                             </div>
                         </div>
                         <div class="form-group text-left col-md-4">
@@ -133,8 +117,8 @@
                         <div class="form-group text-left col-md-2">
                             <label for="validationTooltip08">Postal Code</label>
                             <input type="text" class="form-control" id="validationTooltip08">
-                            <div class="invalid-tooltip">
-                                Enter your 5-digit zip code!
+                            <div class="valid-tooltip">
+                                Looks good!
                             </div>
                         </div>
                     </div>
@@ -180,44 +164,10 @@
                     </div>
                     <div class="card bg-light d-flex align-items-end flex-column">
                         <div class="float-right">
-                            <input type="submit" class="btn md btn-danger">Cancel</input>
-                            <input type="submit" class="btn md btn-dark">Send</input>
+                            <button type="submit" class="btn md btn-danger">Cancel</button>
+                            <button class="btn md btn-dark" type="submit" >Send</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div> 
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://getbootstrap.com/docs/4.3/examples/checkout/form-validation.js"></script>
-    <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
-
-  </body>
-</html>
